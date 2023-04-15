@@ -51,7 +51,7 @@ contract SemaphoreIdentity is ISemaphore, SemaphoreGroups {
         _createGroup(groupId, merkleTreeDepth);
 
         groups[groupId].admin = admin;
-        groups[groupId].merkleTreeDuration = 1 hours;
+        groups[groupId].merkleTreeDuration = 1 minutes;
 
         emit GroupAdminUpdated(groupId, address(0), admin);
     }

@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  #######
+  # Verifier UI
+  #######
+  plurality-verifier:
+    image: mujtabaidrees94/plurality-verifier-web-app
+    ports:
+      - ${PORT}:${PORT}
+    restart: always
