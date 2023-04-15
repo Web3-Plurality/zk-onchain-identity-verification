@@ -1,0 +1,16 @@
+version: "2"
+# region: <your-region> # e.g. us, eu
+# authtoken: <your-token>
+region: eu
+authtoken: 1oZBUNZMj6yWC8ydDnIJOTvg49a_736zy5AnsS7CQYN4peopK
+tunnels:
+    businesspartner:
+        proto: http
+        addr: 8080
+        schemes:
+            - https
+    acapyendpoint:
+        proto: http
+        addr: 8030
+        schemes:
+            - https

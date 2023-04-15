@@ -1,0 +1,51 @@
+# connection behaviour
+public-invites: true # use public did
+auto-accept-invites: true
+auto-accept-requests: true
+monitor-ping: true # enables the connection status in the ui
+auto-ping-connection: true # needed when using the connection protocol, otherwise the connection might not become active
+
+# auto message
+auto-respond-messages: true
+
+# auto credential exchange - issuer
+auto-respond-credential-proposal: true
+auto-respond-credential-request: true
+
+# auto credential exchange - holder
+auto-respond-credential-offer: true
+auto-store-credential: true # needed as there is no ui
+
+# auto presentation exchange
+auto-respond-presentation-proposal: true # needed as there is no ui
+auto-verify-presentation: true # always set to true in the controller
+auto-respond-presentation-request: true
+
+# keep credential exchange records after exchange has completed
+preserve-exchange-records: true
+
+# auto discover features protocol
+auto-disclose-features: true
+
+# wallet
+auto-provision: true
+wallet-type: 'askar'
+
+# revocation notifications (anoncreds only)
+notify-revocation: true
+monitor-revocation-notification: true
+
+# interoperability with other w3c wallets
+# set to false if you experience connection issues with older (mobile) wallets
+emit-new-didcomm-prefix: true
+emit-new-didcomm-mime-type: false # if true, not backwards compatible with aca-py < 0.7.3
+
+# general aca-py config
+enable-undelivered-queue: true
+exch-use-unencrypted-tags: true
+plugin: 'aries_cloudagent.messaging.jsonld'
+outbound-transport: http
+log-level: info
+
+# multi ledger support
+genesis-transactions-list: './genesis-transaction-list.yml'
