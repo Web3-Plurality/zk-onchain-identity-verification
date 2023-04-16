@@ -24,7 +24,9 @@ The DApp in this case is a mortgage lending platform that needs to check the ide
 
 ![Problem loading image, please report!](https://github.com/Web3-Plurality/zk-onchain-identity-verification/blob/main/dapp-verifier/verifier-app/src/images/workflow.png)
 
-The short intro and demo of this project can be found here: https://youtu.be/7fA5Kyl2NcA
+### Video
+
+The short intro and demo video of this project can be found here: https://youtu.be/7fA5Kyl2NcA
 
 To run this demo, you need:
 
@@ -33,7 +35,7 @@ To run this demo, you need:
 
 This demo has three different perspectives: Issuer's, Verifier's and Dapp's
 
-The Issuer:
+### The Issuer:
 
 - Uses standard opensource SSI framework components like [Hyperledger Aries Cloud Agent Python] (https://github.com/hyperledger/aries-cloudagent-python) and [Business Partner Agent] (https://github.com/hyperledger-labs/business-partner-agent)
 - Issues SSI based credentials to the user wallet after establishing a connection using on DID communication protocol
@@ -41,7 +43,7 @@ The Issuer:
 - In our demo use case the issuer issues an identity card to the user's Identity wallet 
 - The issuer demo service can be accessed at this public address[issuer](http://bpa.westeurope.cloudapp.azure.com/)
 
-The Verifier:
+### The Verifier:
 
 - Asks the user to connect using QR code scanning by mobile wallet
 - Asks the user to present off-chain proof using the credentials in his/her mobile wallet
@@ -51,7 +53,7 @@ The Verifier:
 - Can revoke this user's access at a later point in time
 - The verifier demo service can be accessed at this public address [verifier](http://bpa.westeurope.cloudapp.azure.com:3001/)
 
-The DApp:
+### The DApp:
 
 - Asks the user to submit zero knowledge proof that he/she is already verified on the SemaphoreIdentity contract
 - Approves the (mortgage/loan) request if the user's zero knowledge proof is correct.
